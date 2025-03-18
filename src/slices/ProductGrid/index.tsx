@@ -1,6 +1,5 @@
 import { Content, isFilled } from "@prismicio/client";
 import {
-  PrismicRichText,
   PrismicText,
   SliceComponentProps,
 } from "@prismicio/react";

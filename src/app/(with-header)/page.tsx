@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { SliceComponentProps, SliceZone } from "@prismicio/react";
 
-import { createClient } from "@/prismicio";
+// import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { Content } from "@prismicio/client";
 const page = {
@@ -239,7 +239,7 @@ const page = {
             },
             "alt": null,
             "copyright": null,
-            "url": "http://localhost:3000/CNAF.jpg",
+            "url": "https://nidzamuddinmuzakki.netlify.com/CNAF.jpg",
             "id": "Z1NboZbqstJ98Lhl",
             "edit": {
               "x": 0,
@@ -304,7 +304,7 @@ const page = {
             },
             "alt": null,
             "copyright": null,
-            "url": "http://localhost:3000/wjv9lhl8et6pe7eg2sin.jpg",
+            "url": "https://nidzamuddinmuzakki.netlify.com/wjv9lhl8et6pe7eg2sin.jpg",
             "id": "Z1NbwJbqstJ98LiW",
             "edit": {
               "x": 0,
@@ -370,7 +370,7 @@ const page = {
             },
             "alt": "PT. Adapro Nusa Data",
             "copyright": "PT. Adapro Nusa Data",
-            "url": "http://localhost:3000/adapro2.png",
+            "url": "https://nidzamuddinmuzakki.netlify.com/adapro2.png",
             "id": "Z1NboJbqstJ98Lhi",
             "edit": {
               "x": 0,

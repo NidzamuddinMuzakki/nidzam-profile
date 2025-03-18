@@ -1,24 +1,24 @@
-import { Content, isFilled } from "@prismicio/client";
-import { PrismicNextImage } from "@prismicio/next";
-import { FaStar } from "react-icons/fa6";
+import {  isFilled } from "@prismicio/client";
+// import { PrismicNextImage } from "@prismicio/next";
+// import { FaStar } from "react-icons/fa6";
 
-import { createClient } from "@/prismicio";
-import { ButtonLink } from "@/components/ButtonLink";
+// import { createClient } from "@/prismicio";
+// import { ButtonLink } from "@/components/ButtonLink";
 import { HorizontalLine, VerticalLine } from "@/components/Line";
 import clsx from "clsx";
 import { Scribble } from "./Scribble";
 
-async function getDominantColor(url: string) {
-  const paletteURL = new URL(url);
-  paletteURL.searchParams.set("palette", "json");
+// async function getDominantColor(url: string) {
+//   const paletteURL = new URL(url);
+//   paletteURL.searchParams.set("palette", "json");
 
-  const res = await fetch(paletteURL);
-  const json = await res.json();
+//   const res = await fetch(paletteURL);
+//   const json = await res.json();
 
-  return (
-    json.dominant_colors.vibrant?.hex || json.dominant_colors.vibrant_light?.hex
-  );
-}
+//   return (
+//     json.dominant_colors.vibrant?.hex || json.dominant_colors.vibrant_light?.hex
+//   );
+// }
 
 type Props = {
   id: string;
@@ -48,7 +48,7 @@ const mm = [{
       dimensions: { width: 475, height: 1697 },
       alt: null,
       copyright: null,
-      url: 'http://localhost:3000/images/VID_20250318_071127_388.mp4',
+      url: 'https://nidzamuddinmuzakki.netlify.com/images/VID_20250318_071127_388.mp4',
       id: 'Z1Nbl5bqstJ98LhW',
       edit: { x: 0, y: 0, zoom: 1, background: 'transparent' }
     },
@@ -79,7 +79,7 @@ const mm = [{
       dimensions:{ width: 475, height: 1692 },
       alt: null,
       copyright: null,
-      url: 'http://localhost:3000/images/VID_20250318_071224_8922.mp4',
+      url: 'https://nidzamuddinmuzakki.netlify.com/images/VID_20250318_071224_8922.mp4',
       id: 'Z1NblZbqstJ98LhT',
       edit: { x: 0, y: 0, zoom: 1, background: 'transparent' }
     },
@@ -110,7 +110,7 @@ const mm = [{
       dimensions: { width: 475, height: 1695 },
       alt: null,
       copyright: null,
-      url: 'http://localhost:3000/images/VID_20250318_071217_0172.mp4',
+      url: 'https://nidzamuddinmuzakki.netlify.com/images/VID_20250318_071217_0172.mp4',
       id: 'Z1NblpbqstJ98LhV',
       edit:{ x: 0, y: 0, zoom: 1, background: 'transparent' }
     },
@@ -141,7 +141,7 @@ const mm = [{
       dimensions:{ width: 475, height: 1694 },
       alt: null,
       copyright: null,
-      url: 'http://localhost:3000/images/VID_20250318_071233_2982.mp4',
+      url: 'https://nidzamuddinmuzakki.netlify.com/images/VID_20250318_071233_2982.mp4',
       id: 'Z1NbmJbqstJ98LhY',
       edit: { x: 0, y: 0, zoom: 1, background: 'transparent' }
     },
@@ -157,7 +157,7 @@ export async function SkateboardProduct({ id }: Props) {
   // const client = createClient();
   // const product = await client.getByID<Content.SkateboardDocument>(id);
   // console.log(product.data.image.edit)
-  let product =  mm.find(aa=>aa.id==id) 
+  const product =  mm.find(aa=>aa.id==id) 
   if(!product) {
     console.error('No data here!');
      return null

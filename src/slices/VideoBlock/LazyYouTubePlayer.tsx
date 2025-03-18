@@ -10,7 +10,7 @@ type VideoProps = {
 export function LazyYouTubePlayer({ youTubeID }: VideoProps) {
   const [isInView, setIsInView] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-
+  console.log(youTubeID)
   useEffect(() => {
     const currentContainerRef = containerRef.current;
 

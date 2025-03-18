@@ -79,7 +79,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             field={{
               link_type: 'Web',
               
-              url: 'http://localhost:3000/NidzamuddinMuzakkiResume2025Jan.pdf',
+              url: 'https://nidzamuddinmuzakki.netlify.com/NidzamuddinMuzakkiResume2025Jan.pdf',
               text: 'Build Your Board'
             }}
             icon="skateboard"
