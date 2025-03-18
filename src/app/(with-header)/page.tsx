@@ -239,7 +239,7 @@ const page = {
             },
             "alt": null,
             "copyright": null,
-            "url": "https://nidzamuddinmuzakki.netlify.app//CNAF.jpg",
+            "url": "https://nidzamuddinmuzakki.netlify.com/CNAF.jpg",
             "id": "Z1NboZbqstJ98Lhl",
             "edit": {
               "x": 0,
@@ -304,7 +304,7 @@ const page = {
             },
             "alt": null,
             "copyright": null,
-            "url": "https://nidzamuddinmuzakki.netlify.app//wjv9lhl8et6pe7eg2sin.jpg",
+            "url": "https://nidzamuddinmuzakki.netlify.com/wjv9lhl8et6pe7eg2sin.jpg",
             "id": "Z1NbwJbqstJ98LiW",
             "edit": {
               "x": 0,
@@ -370,7 +370,7 @@ const page = {
             },
             "alt": "PT. Adapro Nusa Data",
             "copyright": "PT. Adapro Nusa Data",
-            "url": "https://nidzamuddinmuzakki.netlify.app//adapro2.png",
+            "url": "https://nidzamuddinmuzakki.netlify.com/adapro2.png",
             "id": "Z1NboJbqstJ98Lhi",
             "edit": {
               "x": 0,
@@ -422,7 +422,7 @@ const page = {
 export default async function Page() {
   // const client = createClient();
   
-  const slices =page.data.slices;
+  const slices = bundleTextAndImageSlices(page.data.slices);
 
   return (
     <SliceZone
@@ -457,30 +457,30 @@ type TextAndImageBundleSlice = {
   slices: Content.TextAndImageSlice[];
 };
 
-// function bundleTextAndImageSlices(
-//   slices: Content.HomepageDocumentDataSlicesSlice[]
-// ) {
-//   const res: (
-//     | Content.HomepageDocumentDataSlicesSlice
-//     | TextAndImageBundleSlice
-//   )[] = [];
+function bundleTextAndImageSlices(
+  slices: Content.HomepageDocumentDataSlicesSlice[]
+) {
+  const res: (
+    | Content.HomepageDocumentDataSlicesSlice
+    | TextAndImageBundleSlice
+  )[] = [];
 
-//   for (const slice of slices) {
-//     if (slice.slice_type !== "text_and_image") {
-//       res.push(slice);
-//       continue;
-//     }
+  for (const slice of slices) {
+    if (slice.slice_type !== "text_and_image") {
+      res.push(slice);
+      continue;
+    }
 
-//     const bundle = res.at(-1);
-//     if (bundle?.slice_type === "text_and_image_bundle") {
-//       bundle.slices.push(slice);
-//     } else {
-//       res.push({
-//         id: `${slice.id}-bundle`,
-//         slice_type: "text_and_image_bundle",
-//         slices: [slice],
-//       });
-//     }
-//   }
-//   return res;
-// }
+    const bundle = res.at(-1);
+    if (bundle?.slice_type === "text_and_image_bundle") {
+      bundle.slices.push(slice);
+    } else {
+      res.push({
+        id: `${slice.id}-bundle`,
+        slice_type: "text_and_image_bundle",
+        slices: [slice],
+      });
+    }
+  }
+  return res;
+}

@@ -1,11 +1,11 @@
 import { ButtonLink } from "@/components/ButtonLink";
-// import { Content } from "@prismicio/client";
+import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import { SkaterScribble } from "./SkaterScribble";
 import clsx from "clsx";
 
 type Props = {
-  skater:any;
+  skater: Content.SkaterDocument;
   index: number;
 };
 
