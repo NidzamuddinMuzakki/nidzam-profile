@@ -458,7 +458,7 @@ type TextAndImageBundleSlice = {
 };
 
 function bundleTextAndImageSlices(
-  slices: Content.HomepageDocumentDataSlicesSlice[]
+  slices: any
 ) {
   const res: (
     | Content.HomepageDocumentDataSlicesSlice

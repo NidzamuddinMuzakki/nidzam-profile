@@ -10,13 +10,13 @@ export function WideLogo({ className, ...props }: SVGProps<SVGSVGElement>) {
   console.log(props,className)
   return (
     <div
-    style={{color:'#d1a7c2', fontSize:'250px', fontWeight:800, fontFamily:"Fun"}}
+    style={{color:'#d1a7c2',  fontWeight:800, fontFamily:"Fun"}}
     >
-      <div style={{marginTop:'-100px',transform:'rotate(-20deg)',}}>
+      <div className="fullstack" style={{}}>
         FULLSTACK
 
       </div>
-      <div style={{marginLeft:'50%',marginTop:'-150px',fontSize:'150px',transform:'rotate(-20deg)',}}>
+      <div className="fullstack" style={{}}>
         Developer
 
       </div>

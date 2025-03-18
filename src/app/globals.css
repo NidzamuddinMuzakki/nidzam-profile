@@ -5,6 +5,17 @@
   font-family: "Fun";
   src: url('./fonts//Fungky\ Brow\ DEMO.otf');
 }
+.fullstack{
+  margin-top:-100px;
+  transform:rotate(-20deg);
+  font-size:250px;
+}
+.developer{
+  margin-left:50%;
+  margin-top:-150px;
+  font-size:150px;
+  transform:rotate(-20deg);
+}
 .nidzam-red{
   background: #78121e;
 }
