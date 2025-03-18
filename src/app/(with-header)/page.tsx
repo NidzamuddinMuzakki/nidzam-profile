@@ -239,7 +239,7 @@ const page = {
             },
             "alt": null,
             "copyright": null,
-            "url": "https://nidzamuddinmuzakki.netlify.com/CNAF.jpg",
+            "url": "https://nidzamuddinmuzakki.netlify.app//CNAF.jpg",
             "id": "Z1NboZbqstJ98Lhl",
             "edit": {
               "x": 0,
@@ -304,7 +304,7 @@ const page = {
             },
             "alt": null,
             "copyright": null,
-            "url": "https://nidzamuddinmuzakki.netlify.com/wjv9lhl8et6pe7eg2sin.jpg",
+            "url": "https://nidzamuddinmuzakki.netlify.app//wjv9lhl8et6pe7eg2sin.jpg",
             "id": "Z1NbwJbqstJ98LiW",
             "edit": {
               "x": 0,
@@ -370,7 +370,7 @@ const page = {
             },
             "alt": "PT. Adapro Nusa Data",
             "copyright": "PT. Adapro Nusa Data",
-            "url": "https://nidzamuddinmuzakki.netlify.com/adapro2.png",
+            "url": "https://nidzamuddinmuzakki.netlify.app//adapro2.png",
             "id": "Z1NboJbqstJ98Lhi",
             "edit": {
               "x": 0,

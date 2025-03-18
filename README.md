@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [https://nidzamuddinmuzakki.netlify.com](https://nidzamuddinmuzakki.netlify.com) with your browser to see the result.
+Open [https://nidzamuddinmuzakki.netlify.app/](https://nidzamuddinmuzakki.netlify.app/) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

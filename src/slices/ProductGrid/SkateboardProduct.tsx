@@ -48,7 +48,7 @@ const mm = [{
       dimensions: { width: 475, height: 1697 },
       alt: null,
       copyright: null,
-      url: 'https://nidzamuddinmuzakki.netlify.com/images/VID_20250318_071127_388.mp4',
+      url: 'https://nidzamuddinmuzakki.netlify.app//images/VID_20250318_071127_388.mp4',
       id: 'Z1Nbl5bqstJ98LhW',
       edit: { x: 0, y: 0, zoom: 1, background: 'transparent' }
     },
@@ -79,7 +79,7 @@ const mm = [{
       dimensions:{ width: 475, height: 1692 },
       alt: null,
       copyright: null,
-      url: 'https://nidzamuddinmuzakki.netlify.com/images/VID_20250318_071224_8922.mp4',
+      url: 'https://nidzamuddinmuzakki.netlify.app//images/VID_20250318_071224_8922.mp4',
       id: 'Z1NblZbqstJ98LhT',
       edit: { x: 0, y: 0, zoom: 1, background: 'transparent' }
     },
@@ -110,7 +110,7 @@ const mm = [{
       dimensions: { width: 475, height: 1695 },
       alt: null,
       copyright: null,
-      url: 'https://nidzamuddinmuzakki.netlify.com/images/VID_20250318_071217_0172.mp4',
+      url: 'https://nidzamuddinmuzakki.netlify.app//images/VID_20250318_071217_0172.mp4',
       id: 'Z1NblpbqstJ98LhV',
       edit:{ x: 0, y: 0, zoom: 1, background: 'transparent' }
     },
@@ -141,7 +141,7 @@ const mm = [{
       dimensions:{ width: 475, height: 1694 },
       alt: null,
       copyright: null,
-      url: 'https://nidzamuddinmuzakki.netlify.com/images/VID_20250318_071233_2982.mp4',
+      url: 'https://nidzamuddinmuzakki.netlify.app//images/VID_20250318_071233_2982.mp4',
       id: 'Z1NbmJbqstJ98LhY',
       edit: { x: 0, y: 0, zoom: 1, background: 'transparent' }
     },
