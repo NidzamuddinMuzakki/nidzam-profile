@@ -455,7 +455,7 @@ interface SkaterDocumentData {
  * @typeParam Lang - Language API ID of the document.
  */
 export type SkaterDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<Simplify<SkaterDocumentData>, "skater", Lang>;
+  prismic.PrismicDocumentWithUID<Simplify<SkaterDocumentData>, 'skater', Lang>;
 
 export type AllDocumentTypes =
   | BoardCustomizerDocument
