@@ -3,7 +3,7 @@ import {  isFilled } from "@prismicio/client";
 // import { FaStar } from "react-icons/fa6";
 
 // import { createClient } from "@/prismicio";
-// import { ButtonLink } from "@/components/ButtonLink";
+import { ButtonLink } from "@/components/ButtonLink";
 import { HorizontalLine, VerticalLine } from "@/components/Line";
 import clsx from "clsx";
 import { Scribble } from "./Scribble";
@@ -56,7 +56,7 @@ const mm = [{
     customizer_link: {
       link_type: 'Web',
       key: '311dcbbc-3427-47c9-bd6b-48c592c9fc86',
-      url: '/build?wheel=cream&deck=oni-mask&truck=black&bolt=steel'
+      url: 'https://www.instagram.com/reel/DHHOFdCzLjredywY4392dTNrIQ_JtbCiORcCwA0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
     }
   }
 },
@@ -87,7 +87,7 @@ const mm = [{
     customizer_link: {
       link_type: 'Web',
       key: '6cd5d6c8-c86d-41c2-b417-23d886ba2e9b',
-      url: '/build?wheel=cream&deck=pink-swirl&truck=silver&bolt=silver'
+      url: 'https://www.instagram.com/reel/Cgl05MkgclKryKaCjwo1hXP-RjM0McQwBlC4wU0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
     }
   }
 },
@@ -118,7 +118,7 @@ const mm = [{
     customizer_link: {
       link_type: 'Web',
       key: 'f34bba36-7e72-49e9-8f2c-174605ecbe31',
-      url: '/build?wheel=red&deck=thank-you&truck=silver&bolt=silver'
+      url: 'https://www.instagram.com/reel/Chmo6f1AfIO3tAsWFx2utwj4kVsLXa43xm_h-A0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
     }
   }
 },
@@ -149,7 +149,7 @@ const mm = [{
     customizer_link: {
       link_type: 'Web',
       key: 'a5d964b4-e655-471a-b427-0bac0a5611f1',
-      url: '/build?wheel=yellow&deck=yellow-and-black&truck=black&bolt=yellow'
+      url: 'https://www.instagram.com/reel/CgZvq7gB4iiq9sBLnqo83kQMTE631Bygfq-bow0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
     }
   }
 }]
@@ -204,9 +204,9 @@ export async function SkateboardProduct({ id }: Props) {
         {product.data.name}
       </h3>
 
-      {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
         <ButtonLink field={product.data.customizer_link}>See Details</ButtonLink>
-      </div> */}
+      </div>
     </div>
   );
 }
