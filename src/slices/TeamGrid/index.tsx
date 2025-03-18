@@ -110,7 +110,7 @@ const TeamGrid = async ({ slice }: TeamGridProps): Promise<JSX.Element> => {
           <PrismicText field={slice.primary.heading} />
         </Heading>
       </SlideIn>
-      <div className="grid grid-cols-2 gap-20 md:grid-cols-2" style={{justifyContent:'center'}}>
+      <div className="grid grid-cols-1 gap-20 md:grid-cols-2" style={{justifyContent:'center'}}>
         {skaters.map((skater, index) => (
           <React.Fragment key={index}>
             {skater.data.first_name && (
