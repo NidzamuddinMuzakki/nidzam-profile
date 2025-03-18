@@ -16,7 +16,7 @@ export function WideLogo({ className, ...props }: SVGProps<SVGSVGElement>) {
         FULLSTACK
 
       </div>
-      <div className="fullstack" style={{}}>
+      <div className="developer" style={{}}>
         Developer
 
       </div>

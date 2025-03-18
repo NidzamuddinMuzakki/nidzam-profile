@@ -44,7 +44,7 @@ const skaters = [
         dimensions: { width: 900, height: 1218 },
         alt: null,
         copyright: null,
-        url: 'https://nidzamuddinmuzakki.netlify.app//1742314289210.jpg',
+        url: 'https://nidzamuddinmuzakki.netlify.app/1742314289210.jpg',
         id: 'Z1NbqZbqstJ98Lhx',
         edit: { x: 0, y: 0, zoom: 1, background: 'transparent' }
       },
@@ -83,7 +83,7 @@ const skaters = [
         dimensions: { width: 900, height: 1218 },
         alt: null,
         copyright: null,
-        url: 'https://nidzamuddinmuzakki.netlify.app//1742314303674 (1).jpg',
+        url: 'https://nidzamuddinmuzakki.netlify.app/1742314303674 (1).jpg',
 
         id: 'Z1NbpZbqstJ98Lhr',
         edit: { x: 0, y: 0, zoom: 1, background: 'transparent' }

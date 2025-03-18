@@ -2,5 +2,5 @@
   "repositoryName": "suburbia",
   "adapter": "@slicemachine/adapter-next",
   "libraries": ["./src/slices"],
-  "localSliceSimulatorURL": "https://nidzamuddinmuzakki.netlify.app//slice-simulator"
+  "localSliceSimulatorURL": "https://nidzamuddinmuzakki.netlify.app/slice-simulator"
 }
