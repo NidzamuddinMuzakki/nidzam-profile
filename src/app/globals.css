@@ -1,7 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: "Fun";
+  src: url('./fonts//Fungky\ Brow\ DEMO.otf');
+}
+.nidzam-red{
+  background: #78121e;
+}
 .bg-texture {
   background-image: url("/bg-texture.webp");
   background-size: 720px 460px;

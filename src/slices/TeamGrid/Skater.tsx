@@ -33,7 +33,8 @@ export function Skater({ skater, index }: Props) {
         <SkaterScribble className={clsx("relative", scribbleColor)} />
         <PrismicNextImage
           field={skater.data.photo_foreground}
-          width={500}
+          width={400}
+          height={400}
           alt=""
           className="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
         />
@@ -44,7 +45,7 @@ export function Skater({ skater, index }: Props) {
         </h3>
       </div>
       <ButtonLink field={skater.data.customizer_link} size="sm">
-        Build their board
+        History
       </ButtonLink>
     </div>
   );

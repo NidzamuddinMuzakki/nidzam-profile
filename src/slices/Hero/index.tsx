@@ -26,6 +26,7 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  * Component for "Hero" Slices.
  */
 const Hero = ({ slice }: HeroProps): JSX.Element => {
+    // console.log(slice.primary.heading)
   const deckTextureURL =
     asImageSrc(slice.primary.skateboard_deck_texture) || DEFAULT_DECK_TEXTURE;
   const wheelTextureURL =
@@ -33,7 +34,8 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
   const truckColor =
     slice.primary.skateboard_truck_color || DEFAULT_TRUCK_COLOR;
   const boltColor = slice.primary.skateboard_bolt_color || DEFAULT_BOLT_COLOR;
-
+  console.log(slice.primary.button)
+  // 
   return (
     <Bounded
       data-slice-type={slice.slice_type}
@@ -45,21 +47,46 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         <TallLogo className="w-full text-brand-purple opacity-20 mix-blend-multiply lg:hidden" />
       </div>
 
-      <div className="absolute inset-0 mx-auto mt-24 grid max-w-6xl grid-rows-[1fr,auto] place-items-end px-6 ~py-10/16">
+      <div className="absolute inset-0 mx-auto mt-0 grid max-w-6xl grid-rows-[1fr,auto] place-items-end px-6 ~py-10/16">
         <Heading className="relative max-w-2xl place-self-start">
-          <PrismicText field={slice.primary.heading} />
+          <PrismicText field={[
+    {
+        "type": "heading1",
+        "text": "Skater to Programmer",
+        "spans": [],
+        "direction": "ltr"
+    }
+]} />
         </Heading>
         <div className="flex relative w-full flex-col items-center justify-between ~gap-2/4 lg:flex-row">
           <div className="max-w-[45ch] font-semibold ~text-lg/xl">
-            <PrismicRichText field={slice.primary.body} />
+            <PrismicRichText field={[
+    {
+        "type": "paragraph",
+        "text": `Golang Developer (microservice) & ReactJS Developer (microfrontend). IT Project in financial services industry`,
+        "spans": [
+            {
+                "start": 18,
+                "end": 22,
+                "type": "em"
+            }
+        ],
+        "direction": "ltr"
+    }
+]} />
           </div>
           <ButtonLink
-            field={slice.primary.button}
+            field={{
+              link_type: 'Web',
+              
+              url: 'http://localhost:3000/NidzamuddinMuzakkiResume2025Jan.pdf',
+              text: 'Build Your Board'
+            }}
             icon="skateboard"
             size="lg"
             className="z-20 mt-2 block"
           >
-            {slice.primary.button.text}
+            {"see details"}
           </ButtonLink>
         </div>
       </div>
